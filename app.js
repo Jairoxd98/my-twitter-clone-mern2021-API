@@ -37,7 +37,7 @@ app.use(function(req, res, next) {
 
 app.use(cors());
 app.use(bodyParser.json({limit: '50mb'}));
-app.use(bodyParser.urlencode({limit: '50mb', extended: true}));
+//app.use(bodyParser.urlencode({limit: '50mb', extended: true}));
 
 mongoose.connect('process.env.DB_URI', { useNewUrlParser: true })
     .then(() =>  console.log('mymerndb connection successful'))
